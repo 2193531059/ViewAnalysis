@@ -4,18 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.administrator.viewtest.MainActivity">
+    tools:context="com.example.administrator.custom_view.CustomViewActivity">
 
-    <com.example.administrator.move.MyMoveView
+    <com.example.administrator.custom_view.CircleView
         android:id="@+id/my_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/btn_1"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:text="点我移动"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        app:circle_color="@color/colorAccent"/>
 
 </RelativeLayout>
